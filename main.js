@@ -1,13 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-        classObject: {
-            child: true,
-            'is-active': false
-        },
-        styleObject: {
-            color: 'red',
-            backgroundColor: 'lightgray'
+        item: {
+            id: 1,
+            src: 'item1.png',
+            alt: '商品サムネイル',
+            width: 100,
+            height: 100
         }
     }
 })
