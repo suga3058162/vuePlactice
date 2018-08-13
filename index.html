@@ -7,8 +7,8 @@
     </head>
     <body>
         <div id="app">
-            <p v-bind:class="{ child: isChild, 'is-active': isActive }">Text</p>
-            <p v-bind:style="{ color: textColor, backgroundColor: bgColor }">Text</p>
+            <p v-bind:class="classObject">Text</p>
+            <p v-bind:style="styleObject">Text</p>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
