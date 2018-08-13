@@ -7,15 +7,11 @@
     </head>
     <body>
         <div id="app">
-            <div v-if="type === 'A'">
-                typeはA
-            </div>
-            <div v-else-if="type === 'B'">
-                typeはB
-            </div>
-            <div v-else>
-                すべての条件を満たさなかった
-            </div>
+            <ul>
+                <li v-for="item in list" v-bind:key="item.id">
+                    ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
+                </li>
+            </ul>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
