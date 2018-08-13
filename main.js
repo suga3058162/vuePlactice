@@ -9,6 +9,11 @@ var app = new Vue({
         ]
     },
     methods: {
+        // 削除ボタンをクリックしたときのハンドラ
+        doRemove: function(index) {
+            // 受け取ったインデックスの位置から1個要素を削除
+            this.list.splice(index, 1)
+        },
         // 追加ボタンをクリックしたときのハンドラ
         doAdd: function() {
             // リスト内で一番大きいIDを取得
